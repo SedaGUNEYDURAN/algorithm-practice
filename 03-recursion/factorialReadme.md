@@ -1,0 +1,1 @@
+**Recursively(özyinelemeli)**; Problemi daha küçük alt parçalara bölerek çözme yöntemidir.  Fonksiyonun kendisini çağırması ile sağlanır. Her çağrı için stacke veri eklenir. Fazla çağrı olduğunda stack overflow hatası ile karşılaşırız. 
