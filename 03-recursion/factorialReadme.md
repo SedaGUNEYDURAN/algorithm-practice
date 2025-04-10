@@ -1,5 +1,5 @@
-• **Recursively(özyinelemeli)**; Problemi daha küçük alt parçalara bölerek çözme yöntemidir.  Fonksiyonun kendisini çağırması ile sağlanır. Her çağrı için stacke frame eklenir. Fazla çağrı olduğunda stack overflow hatası ile karşılaşırız. Her recursive çağrıda, önceki çağrıların yürütme durumu stacktedir. Fonksiyon tamamlandığında; stack, frameleri birer birer kaldırır ve geri dönüş işlemlerini yapar.
-• Faktöriyel hesabı yaparken n değerimiz 5;
+• **Recursively(özyinelemeli)**; Problemi daha küçük alt parçalara bölerek çözme yöntemidir.  Fonksiyonun kendisini çağırması ile sağlanır. Her çağrı için stacke frame eklenir. Fazla çağrı olduğunda stack overflow hatası ile karşılaşırız. Her recursive çağrıda, önceki çağrıların yürütme durumu stacktedir. Fonksiyon tamamlandığında; stack, frameleri birer birer kaldırır ve geri dönüş işlemlerini yapar.   
+• Faktöriyel hesabı yaparken n değerimiz 5;   
 
  - Main metotunda factorial(5) çağrısı yapılır ve stack'e eklenir.
  - factorial metodunda 5 * factorial(5-1) işlemi yapılır. Ancak metot çağrısı olduğu için işlem yapılmaz çağrı yapılır ve stacke eklenir çağrı.
