@@ -37,5 +37,3 @@
    -  i=3 j=4; 100>60 min değerimiz 60 olur.
    -  Min değeri ile 3. indisin arasında swap işlemi yapılır ve dizimiz ; {3,20,40,60,100} halini alır
    -  Dördüncü indis ile karşılaştıracak bir değer olmadığı için karşılaştırma işlemimiz bitmiş olur. 
-
-• n-1 
