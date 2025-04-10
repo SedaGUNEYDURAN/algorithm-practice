@@ -1,0 +1,2 @@
+• Recursive olarak binary search algoritmasını yazdığımızda time complexity değişmez, çünkü her recursive adımda arama aralığı yarıya düşürülüyor. Time complexity; O(logn)   
+• Space complexity için aynı şeyi söyleyemeyiz. Çünkü her srecursive çağrı stackte saklanıyor. Bu da ek bir O(logn) alan gerektirir. Recursive çağrılar dizinin derinliği kadar stack alanı kullanır. İterative(döngüsel yöntemler) yöntemlerde stack frame oluşturulmadığı için böyle bir ek alana ihtiyaç yoktur. 
