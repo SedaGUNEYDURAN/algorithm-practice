@@ -1,20 +1,19 @@
 public class Main {
   public static void main(String[] args) {
   
-   // int[] dizi = {100, 20, 3, 40, 60}; 
- int[] dizi = {5, 3, 2, 8, 6};
+	int[] dizi = {100,20,3,40,60};
     int min;
+    int temp;
     for(int i=0; i<dizi.length-1; i++){
-    	min=dizi[i];
+    	min=i;
    		 for(int j=i+1; j<dizi.length; j++){
-         	if(min>dizi[j]){
-            System.out.println("min:"+min+"dizi[j]:"+dizi[j]);
-            	min=dizi[j];
-                dizi[j]=dizi[i];
-                dizi[i]=min;
+         	if(dizi[min]>dizi[j]){
+            	min=j;
         	}        
         }
-
+        temp=dizi[i];
+        dizi[i]=dizi[min];
+        dizi[min]=temp;
     }
     
     for(int i=0; i<dizi.length; i++){
