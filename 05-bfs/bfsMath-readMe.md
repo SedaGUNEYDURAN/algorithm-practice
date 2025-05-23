@@ -6,4 +6,5 @@
  
  
  
-• Ancak soruna bir mühendis gözü ile bakarsak aslında bu sorun bir olasılık-istatistik(tekrarlı permütasyon) sorusu olduğunu görürüz. Tekrarlı permütasyon formülü ile çözdüğümüzde time complexity; **O(1)**
+• Ancak soruna bir mühendis gözü ile bakarsak aslında bu sorun bir olasılık-istatistik(tekrarlı permütasyon) sorusu olduğunu görürüz. Tekrarlı permütasyon formülü ile çözdüğümüzde time complexity; **O(1)**   
+•  İlk bakışta for döngüsü olduğu için O(n) gibi duruyor time complexity ancak sabit sınırlar içinde olduğu her iki kodun da pratikte time complexitysi O(1)'dir. (1 <= m, n <= 100)
