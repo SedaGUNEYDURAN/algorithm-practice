@@ -1,13 +1,16 @@
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        HashMap <Integer, Integer> hashMap= new HashMap();
-        for(int i=0; i<nums.length;i++){
-            if(hashMap.containsKey(target-nums[i])){
-                Integer[] num= Arrays.stream(nums).boxed().toArray(Integer[]::new);
-                int getIndex=Arrays.asList(num).indexOf(target-nums[i]);
-                return new int[]{getIndex,i};
-            } hashMap.put(nums[i],i);
+    public int uniquePaths(int m, int n) {
+        double toplam=m+n-2;
+        double sonuc=1;
+        for(double i=toplam; toplam>1; toplam--){        
+            m--;
+            n--;
+            if(m<1)
+                m=1;
+            if(n<1)
+                n=1;
+            sonuc=(toplam/(m*n))*sonuc;
         }
-        return null;
+        return (int)Math.round(sonuc);
     }
 }
